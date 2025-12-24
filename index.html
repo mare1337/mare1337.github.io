@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Map</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background -->
+    <div id="background"></div>
+
+    <!-- Logo -->
+    <img id="logo" src="logo.webp" alt="Logo">
+
+    <!-- Map wrapper -->
+    <div id="mapWrapper">
+        <div id="mapContainer">
+            <img id="mapImg" src="map.png" draggable="false">
+        </div>
+    </div>
+
+    <!-- Zoom controls -->
+    <div id="zoomControls">
+        <button id="zoomIn">+</button>
+        <input type="range" id="zoomSlider" min="0.5" max="3" step="0.01" value="1">
+        <button id="zoomOut">-</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
